@@ -3,13 +3,14 @@
 ## On course tutorial
 
 Supplemental texts (Optional): 
-Digital Image Processing (3rd Edition) by Rafael C. Gonzalez and Richard E. Woods, Prentice-Hall
 
-Digital Image Processing Using MATLAB, 2nd ed. by Rafael C. Gonzalez, Richard E. Woods and Steven L. Eddins Gatemark Publishing
++ Digital Image Processing (3rd Edition) by Rafael C. Gonzalez and Richard E. Woods, Prentice-Hall
 
-Introduction to Digital Image Processing with MATLAB by Alasdair McAndrew, Course Technology
++ Digital Image Processing Using MATLAB, 2nd ed. by Rafael C. Gonzalez, Richard E. Woods and Steven L. Eddins Gatemark Publishing
 
-Fundamentals of Digital Image Processing: A Practical Approach with Examples in Matlab by Chris Solomon and Toby Breckon, Wiley
++ Introduction to Digital Image Processing with MATLAB by Alasdair McAndrew, Course Technology
+
++ Fundamentals of Digital Image Processing: A Practical Approach with Examples in Matlab by Chris Solomon and Toby Breckon, Wiley
 
 ## Software Utilities
 
