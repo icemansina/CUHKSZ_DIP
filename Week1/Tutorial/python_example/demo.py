@@ -2,6 +2,7 @@ from scipy.misc import imread,imresize,imsave
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
+from skimage.color import rgb2gray
 
 
 def read(path):
@@ -16,15 +17,6 @@ def show(img,  cmap=None):
     plt.imshow(img, cmap=cmap)
     plt.show()
 
-if __name__ == "__main__":
-    img = read('./rabbit.jpg')
-    #show(img)
-    #print(img)
-    #save('rabbit2.jpg', img)
-    #print(img.shape)
-    img[:,:,0] = np.zeros_like(img[:,:,0])
-    show(img)
-
 def to_binary(img):
     for i in range(img.shape[0]):
         for j in range(img.shape[1]):
@@ -36,3 +28,17 @@ def to_binary(img):
     return img
 
 
+if __name__ == "__main__":
+    img = read('./rabbit.jpg')
+    show(img)
+    # save to png
+    save('rabbit.png', img)
+    #print(img.shape)
+    img_gray = rgb2gray(img)
+    show(img_gray, cmap='gray')
+    img_binary = to_binary(img_gray)
+    show(img_binary, cmap='gray')
+    low_res = imresize(img, (120, 120), interp='nearest')
+    high_res = imresize(low_res, (360, 360), interp='nearest')
+    imsave('low_res.png', low_res)
+    imsave('high_res.png', high_res)
