@@ -3,7 +3,8 @@ whos I
 figure;imshow(I);
 title('Original Image')
 
-% Pow Transform 
-G = imadjust(I, [], [], 2);
+% Specific intensity Enhance 
+G = imadjust(I, [0.5 0.75], [0 1]);
 figure;imshow(G);
-title('Pow Transform')
+title('Specific intensity Enhance')
+
