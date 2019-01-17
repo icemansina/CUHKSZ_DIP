@@ -30,7 +30,7 @@ subplot(2, 2, 4); imshow(X_bw); title("binary image")
 imwrite(X_gray, 'imgs/landscape_gray.jpg')
 
 % rotate image & show second image
-fx = x(end:-1:1, :, :);
+fx = X(end:-1:1, :, :);
 figure(2), imshow(fx)
 
 % image resize
