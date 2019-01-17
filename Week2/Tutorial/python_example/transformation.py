@@ -57,7 +57,7 @@ def show_threshold():
     y = im2bw(img, th=128)
     ax2.axis('off')
     ax2.imshow(y, cmap='gray')
-    ax2.set_title("negative image")
+    ax2.set_title("binary image")
     plt.show()
 
 
@@ -89,7 +89,7 @@ def show_image_negatives():
     y = im2negative(img)
     ax2.axis('off')
     ax2.imshow(y, cmap='gray')
-    ax2.set_title("binary image")
+    ax2.set_title("negative image")
     plt.show()
 
 
@@ -128,8 +128,9 @@ if __name__ == '__main__':
         show_power_low_transform
     ]
     for func in functions:
-        y = input("run %s? (yes/no):" % func.__name__)
+        y = input("run %s? (yes/no): " % func.__name__)
         if y.lower() == "yes" or y.lower() == 'y':
             func()
+        print("=" * 88)
 
 
