@@ -34,4 +34,5 @@ Late Assignment Credit: Late programming assignments will be penalized 15 percen
 ## Table of contents
 
 ### Week 1: Introduction of digital image processing
-### Week 2: Intensity Transformation and spatial filtering
+### Week 2: Intensity Transformation and histogram equalization
+### Week 3: Histogram operations and Spatial filtering
