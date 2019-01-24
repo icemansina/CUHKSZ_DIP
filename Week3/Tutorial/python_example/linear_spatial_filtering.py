@@ -24,4 +24,3 @@ show(I3, 'using constant 0 padding')
 
 
 
-
