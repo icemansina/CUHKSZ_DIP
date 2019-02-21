@@ -1,8 +1,10 @@
 import numpy as np
 from demo import read, show
+from scipy.misc import imread,imresize,imsave
 
 
-img = read()
+img = read("../matlab_example/imgs/0401.tif")
+img = imresize(img, (32,32))
 show(img, cmap='gray')
 
 h , w = img.shape
@@ -13,7 +15,7 @@ for u in range(h):
         res = 0
         for x in range(h):
             for y in range(w):
-                res += img[x,y] * np.exp(-1.j * 2 * PI * (u * x / h + v * y / w))
+                res += img[x,y] * np.exp(-1.j * 2 * np.pi * (u * x / h + v * y / w))
         F[u,v] = res
 log_F = np.log(1 + np.abs(F))
 
