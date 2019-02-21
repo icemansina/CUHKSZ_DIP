@@ -1,5 +1,5 @@
 % Computing and Visualizing the 2-D DFT
-
+figure(3)
 f = imread('imgs/0401.tif');
 subplot(221)
 imshow(f, [ ])
@@ -9,7 +9,7 @@ F = fft2(f);
 subplot(222)
 S1 = log(1 + abs(F));
 imshow(S1, [ ])
-title("Corresonding Spectrum")
+title("Corresponding Spectrum")
 
 % you can use 'imrotate(A,angle,method,bbox)' for image rotation
 Fc = fftshift(F);

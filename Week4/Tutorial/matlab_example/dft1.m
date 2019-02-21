@@ -1,5 +1,5 @@
 % Computing and Visualizing the 2-D DFT
-
+figure(2)
 f = imread('imgs/0401.tif');
 subplot(221)
 imshow(f, [ ])

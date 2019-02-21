@@ -1,5 +1,5 @@
 % Ref: https://blog.csdn.net/u010592995/article/details/73555425
-
+figure(1)
 N = 15;     %采样数量
 f = 1;       %信号频率1Hz
 Fs = 10;     %采样频率 10Hz
