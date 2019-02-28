@@ -8,6 +8,7 @@ original = mat2gray(f2);
 in_rows = size(original,1);
 in_cols = size(original,2);
 corrupted =  original + 0.05*randn(size(original));
+
 iMin=0;
 iMax=0;
 jMin=0;
@@ -82,12 +83,6 @@ daspect ([1 1 1]);
 axis tight;
 set(gcf,'Position',get(0,'ScreenSize'));%maximize figure
 
-figure(2);
-imagesc ((den)); % phantom is a popular test image
-colormap('Gray');
-title('Spacial Mask');
-daspect ([1 1 1]);
-axis tight;
 
 imwrite(corrupted,'images\barbaraCorrupted.png');
 imwrite(filtered,'images\barbaraBilateralFiltered.png');
