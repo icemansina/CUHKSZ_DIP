@@ -43,3 +43,4 @@ fn = spfilt(gs, 'min', 3, 3);
 subplot(4, 2, 8);
 imshow(fn);
 title('remove salt noise by min filter');
+
