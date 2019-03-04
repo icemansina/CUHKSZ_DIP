@@ -37,4 +37,5 @@ Late Assignment Credit: Late programming assignments will be penalized 15 percen
 ### Week 2: Intensity Transformation and histogram equalization
 ### Week 3: Histogram operations and Spatial filtering
 ### Week 4: Frequency Domain Operation
-### Week 5: Image Restoration and reconstruction
+### Week 5: Image Restoration_Reconstruction
+### Week 6: Edge Detection
