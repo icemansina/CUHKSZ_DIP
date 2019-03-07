@@ -1,7 +1,7 @@
 % edge detection
 % https://ww2.mathworks.cn/help/images/ref/edge.html
 
-f = imread('./img1.tif');
+f = imread('./images/img1.tif');
 figure(1)
 imshow(f)
 title('origin image')

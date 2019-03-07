@@ -1,6 +1,6 @@
 clc
 clear all
-img_in=imread('./lena.jpg');
+img_in=imread('./images/lena.jpg');
 img_in=rgb2gray(img_in);
 figure,imshow(img_in);
 title('ԭͼ');
