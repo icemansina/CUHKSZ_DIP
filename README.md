@@ -39,3 +39,4 @@ Late Assignment Credit: Late programming assignments will be penalized 15 percen
 ### Week 4: Frequency Domain Operation
 ### Week 5: Image Restoration_Reconstruction
 ### Week 6: Edge Detection
+### Week 7: Optical flow
