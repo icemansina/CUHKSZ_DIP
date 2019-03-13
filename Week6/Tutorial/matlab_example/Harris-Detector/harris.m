@@ -36,7 +36,6 @@ Sxy = conv2(Gxy, Ixy);
 im = zeros(numOfRows, numOfColumns);
 for x=1:numOfRows,
    for y=1:numOfColumns,
-       x,y
        % 4) Define at each pixel(x, y) the matrix H
        H = [Sx2(x, y) Sxy(x, y); Sxy(x, y) Sy2(x, y)];
        
@@ -52,6 +51,6 @@ end
 
 % 7) Compute nonmax suppression
 output = im > imdilate(im, [1 1 1; 1 0 1; 1 1 1]);
-
+I(output==1) = 0;
 figure, imshow(I);
-figure, imshow(output)
+figure, imshow(output);
