@@ -23,9 +23,6 @@ subplot(1,2,2);
 imshow(g, []);
 title("b) pass through filter");
 
-
-print('figures/matlab1','-dpng');
-close all;
 % figure();
 % HM = fftshift(H);
 % mesh(HM(1:1:end, 1:1:end));

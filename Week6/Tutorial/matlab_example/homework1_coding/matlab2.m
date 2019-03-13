@@ -78,7 +78,6 @@ plot(gfreal(round(I/size(gfreal,1)), :));
 xlim([0,200]);
 axis off
 
-print('figures/matlab2freq','-dpng');
 % close all;
 
 
@@ -119,5 +118,4 @@ xlim([0,200]);
 axis off;
 
 
-print('figures/matlab2spatial','-dpng');
 % close all;

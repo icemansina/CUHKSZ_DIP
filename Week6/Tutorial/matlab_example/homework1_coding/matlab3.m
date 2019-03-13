@@ -34,5 +34,3 @@ subplot(3,2,6);
 imhist(image_eq_again);
 % bar(Licheng_eq_m, hist_fast, 500);
 title('histogram - equalized again');
-
-print('figures/matlab3','-dpng')
