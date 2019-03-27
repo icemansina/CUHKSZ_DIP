@@ -1,0 +1,154 @@
+\documentclass{article}
+
+\usepackage[nonatbib]{dip}
+%NOTE: to compile a camera-ready version, add the [final] option, e.g.:
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex,colorlinks]{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+
+\title{Paper Instructions for CIE4512 Final Project 2019}
+
+\author{
+  Student \\
+  The Chinese University of Hong Kong, Shenzhen\\
+  \texttt{XXX@cuhk.edu.cn} \\
+  %% examples of more authors
+   \And
+}
+
+\def\PaperID{XXX} % *** Enter your assigned Paper ID here
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  The abstract should first state the problem you want to solve and drawbacks of existing approaches in a very brief way. Then it should state key steps of your proposed algorithm with \textit{clear} motivations and/or observations. This part is the majority of your abstract. Finally, some highlight experiment results should be shown here. Try to avoid using citation and equation here.
+\end{abstract}
+
+
+Disclaimer: The writing guideline below is just for \textbf{\textit{beginners}}. You are absolutely at free will to write in your own style.
+%
+An example paper on pose estimation is here:
+
+ \href{https://arxiv.org/pdf/1611.00468.pdf}{\texttt{https://arxiv.org/pdf/1611.00468.pdf}}.
+
+\section{Introduction}
+
+Probably this is the most important section in the whole paper. First you should state the problem background, overview, etc.
+
+Then some transitional sentence is followed by starting a new paragraph, pointing out the potential drawbacks or concerns in the problem you are trying to solve. The motivation  naturally comes out. It would be better to provide some figures to illustrate your idea (like a toy example).
+
+The third part first comes the famous `In this paper, we propose XXX, which is shown in Figure 1.' sentence; some brief statements should be appended explaining the key steps of your algorithm. A very brief version of the algorithm's key components should appear in the abstract.
+
+The last paragraph should list the contributions of your paper and optionally provide some external links (Github/project page, code link, etc.), as we have an active lean towards open-source research.
+
+\subsection{Related Work}
+Due to a maximum page of four in our project, we suggest you to write a sub-section of related work here. No need to start a new section. This part should state some important and relevant work with your method: how previous work address the problem, their existing problems or drawbacks, what differentiate yours from theirs. For citation, you can use Li \textit{et al.} \cite{MCG} propose a blabla. Or use batch citations like, previous work \cite{bing,scale_aware,Hosang2015Pami} address the problem blabla.
+
+\section{The Proposed Algorithm}
+
+Write a clear pipeline; use subsection to state your method explicitly; apply professional mathematical denotations and expressions. Use figures and/or tables to illustrate the claimed idea.
+
+In one word: write a professional research article.
+
+\section{Experiments}
+
+The experiment should first state the dataset overview, evaluation metric and implementation details; then a sub-section on individual component analysis should be followed (why component A is necessary in my algorithm; what if A is removed, or A is replaced with B); the last part should list the performance comparison between the proposed method and previous state-of-the-arts.
+
+Since we have a tight paper length requirement, you can put some parts of the experiments in the Appendix section if your paper is over-length.
+
+\section{Discussions (optional)}
+
+\textcolor{red}{\textit{\textbf{Note: no need to write the conclusion part.}}}
+
+\section{Misc for preparing your paper}
+
+There are some useful commands for first-time \LaTeX writers.
+
+\subsection{Figures}
+
+See Figure \ref{figure_sample}.
+\begin{figure}[h]
+  \centering
+  \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+  \caption{Sample figure caption.}\label{figure_sample}
+\end{figure}
+
+\subsection{Tables}
+
+All tables must be centered, neat, clean and legible.  The table
+number and title always appear before the table.  See
+Table~\ref{sample-table}.
+
+\begin{table}[t]
+  \caption{Sample table title}
+  \label{sample-table}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    \multicolumn{2}{c}{Part}                   \\
+    \cmidrule{1-2}
+    Name     & Description     & Size ($\mu$m) \\
+    \midrule
+    Dendrite & Input terminal  & $\sim$100     \\
+    Axon     & Output terminal & $\sim$10      \\
+    Soma     & Cell body       & up to $10^6$  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Items and Algorithm}
+
+\begin{itemize}
+
+\item Item 1.
+
+\item I love deep learning so much and the course TAs are so lovely.
+
+\end{itemize}
+
+\subsection{Citations}
+
+Add the citations in the \texttt{dl.bib} file.
+Try to use unanimous citation format across your paper.
+
+\section*{Acknowledgments}
+
+This part is optional.
+All acknowledgments go at the end of the paper.
+Do \textit{not} include acknowledgments in the anonymized submission, only in the final paper.
+
+
+\bibliographystyle{ieee}
+\bibliography{dip}
+
+
+\clearpage
+Page 4.
+
+\clearpage
+Page 5.
+
+\clearpage
+Page 6.
+
+\clearpage
+\textcolor{blue}{STOP. The length of the paper is six.}
+
+A 7-th page can include references \textit{only}. However, we \textit{\textbf{strongly}} suggest you to
+write all contents including references within six pages.
+
+If you have more to write, put it in the appendix. We do admit the six-page requirement is a little bit light for a high-quality paper. In top-tier AI/CV/ML conferences, the common paper length is 8.
+
+\clearpage
+\section*{Appendix}
+Put whatever you like here. In some sense, this section is also called supplementary material.
+
+\end{document}
