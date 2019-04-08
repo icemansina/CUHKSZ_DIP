@@ -42,3 +42,5 @@ Late Assignment Credit: Late programming assignments will be penalized 15 percen
 ### Week 7: Optical flow
 ### Week 8: Morphological Filters
 ### Week 9: HOG and Object Detection
+### Week 10: Final Project proposal presentation and object detection
+### Week 11: Geometric operations, image warp and image registration
