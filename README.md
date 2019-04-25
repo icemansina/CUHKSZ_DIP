@@ -45,3 +45,5 @@ Late Assignment Credit: Late programming assignments will be penalized 15 percen
 ### Week 10: Final Project proposal presentation and object detection
 ### Week 11: Geometric operations, image warp and image registration
 ### Week 12: Image Compression
+### Week 13: Basic Image Segmentation
+### Week 14: Advanced Image Segmentation
